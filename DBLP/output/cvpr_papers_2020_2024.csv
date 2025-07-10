@@ -712,7 +712,7 @@ End-to-End Model-Free Reinforcement Learning for Urban Driving Using Implicit Af
 GraphTER: Unsupervised Learning of Graph Transformation Equivariant Representations via Auto-Encoding Node-Wise Transformations.,Xiang Gao; Wei Hu; Guo-Jun Qi,2020,CVPR,https://doi.org/10.1109/CVPR42600.2020.00719
 Can Facial Pose and Expression Be Separated With Weak Perspective Camera?,Evangelos Sariyanidi; Casey J. Zampella; Robert T. Schultz; Birkan Tunç,2020,CVPR,https://doi.org/10.1109/CVPR42600.2020.00720
 Probabilistic Regression for Visual Tracking.,Martin Danelljan; Luc Van Gool; Radu Timofte,2020,CVPR,https://doi.org/10.1109/CVPR42600.2020.00721
-3DRegNet: A Deep Neural Network for 3D Point Registration.,G. Dias Pais; Srikumar Ramalingam; Venu Madhav Govindu; Jacinto C. Nascimento; Rama Chellappa; Pedro Miraldo,2020,CVPR,https://doi.org/10.1109/CVPR42600.2020.00722
+3DRegNet: A Deep Neural Network for 3D Point Registration.,Goncalo Dias Pais; Srikumar Ramalingam; Venu Madhav Govindu; Jacinto C. Nascimento; Rama Chellappa; Pedro Miraldo,2020,CVPR,https://doi.org/10.1109/CVPR42600.2020.00722
 Compressed Volumetric Heatmaps for Multi-Person 3D Pose Estimation.,Matteo Fabbri; Fabio Lanzi; Simone Calderara; Stefano Alletto; Rita Cucchiara,2020,CVPR,https://doi.org/10.1109/CVPR42600.2020.00723
 Three-Dimensional Reconstruction of Human Interactions.,Mihai Fieraru; Mihai Zanfir; Elisabeta Oneata; Alin-Ionut Popa; Vlad Olaru; Cristian Sminchisescu,2020,CVPR,https://doi.org/10.1109/CVPR42600.2020.00724
 Distribution-Induced Bidirectional Generative Adversarial Network for Graph Representation Learning.,Shuai Zheng; Zhenfeng Zhu; Xingxing Zhang; Zhizhe Liu; Jian Cheng; Yao Zhao,2020,CVPR,https://doi.org/10.1109/CVPR42600.2020.00725
@@ -7914,7 +7914,7 @@ GSVA: Generalized Segmentation via Multimodal Large Language Models.,Zhuofan Xia
 MaGGIe: Masked Guided Gradual Human Instance Matting.,Chuong Huynh; Seoung Wug Oh; Abhinav Shrivastava; Joon-Young Lee,2024,CVPR,https://doi.org/10.1109/CVPR52733.2024.00371
 EFormer: Enhanced Transformer Towards Semantic-Contour Features of Foreground for Portraits Matting.,Zitao Wang; Qiguang Miao; Yue Xi; Peipei Zhao,2024,CVPR,https://doi.org/10.1109/CVPR52733.2024.00372
 Segment Any Event Streams via Weighted Adaptation of Pivotal Tokens.,Zhiwen Chen; Zhiyu Zhu; Yifan Zhang; Junhui Hou; Guangming Shi; Jinjian Wu,2024,CVPR,https://doi.org/10.1109/CVPR52733.2024.00373
-Polar Matte: Fully Computational Ground-Truth-Quality Alpha Matte Extraction for Images and Video using Polarized Screen Matting.,Kenji Enomoto; TJ Rhodes; Brian Price; Gavin Miller,2024,CVPR,https://doi.org/10.1109/CVPR52733.2024.00374
+Polar Matte: Fully Computational Ground-Truth-Quality Alpha Matte Extraction for Images and Video using Polarized Screen Matting.,Kenji Enomoto; T. J. Rhodes; Brian L. Price; Gavin Miller,2024,CVPR,https://doi.org/10.1109/CVPR52733.2024.00374
 Segment Every Out-of-Distribution Object.,Wenjie Zhao; Jia Li; Xin Dong; Yu Xiang; Yunhui Guo,2024,CVPR,https://doi.org/10.1109/CVPR52733.2024.00375
 Multi-View Aggregation Network for Dichotomous Image Segmentation.,Qian Yu; Xiaoqi Zhao; Youwei Pang; Lihe Zhang; Huchuan Lu,2024,CVPR,https://doi.org/10.1109/CVPR52733.2024.00376
 pix2gestalt: Amodal Segmentation by Synthesizing Wholes.,Ege Ozguroglu; Ruoshi Liu; Dídac Surís; Dian Chen; Achal Dave; Pavel Tokmakov; Carl Vondrick,2024,CVPR,https://doi.org/10.1109/CVPR52733.2024.00377

@@ -8,6 +8,47 @@ from collections import Counter
 import matplotlib
 matplotlib.use('Agg')  # 使用非交互式后端，避免GUI问题
 import matplotlib.pyplot as plt
+from matplotlib.font_manager import FontProperties
+
+# 设置中文字体支持
+def set_chinese_font():
+    """设置中文字体，解决中文显示乱码问题"""
+    try:
+        # 尝试使用系统中的中文字体
+        if os.name == 'nt':  # Windows系统
+            font_paths = [
+                'C:/Windows/Fonts/simhei.ttf',  # 黑体
+                'C:/Windows/Fonts/simsun.ttc',  # 宋体
+                'C:/Windows/Fonts/msyh.ttc',    # 微软雅黑
+                'C:/Windows/Fonts/simkai.ttf'   # 楷体
+            ]
+            
+            # 检查字体是否存在并设置
+            for font_path in font_paths:
+                if os.path.exists(font_path):
+                    font_prop = FontProperties(fname=font_path)
+                    plt.rcParams['font.family'] = font_prop.get_name()
+                    print(f"已设置中文字体: {font_path}")
+                    return font_prop
+                    
+            # 如果以上字体都不存在，使用matplotlib内置的中文字体
+            plt.rcParams['font.sans-serif'] = ['SimHei', 'Microsoft YaHei', 'KaiTi', 'STSong', 'SimSun']
+            plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
+            print("已尝试使用matplotlib内置中文字体")
+            
+        else:  # Linux/Mac系统
+            plt.rcParams['font.sans-serif'] = ['WenQuanYi Micro Hei', 'Heiti TC', 'SimHei', 'STHeiti']
+            plt.rcParams['axes.unicode_minus'] = False
+            print("已尝试使用系统中文字体")
+            
+    except Exception as e:
+        print(f"设置中文字体时出错: {e}")
+        print("将使用默认字体，中文可能显示为乱码")
+    
+    return None
+
+# 在程序开始时调用设置中文字体
+chinese_font = set_chinese_font()
 
 # 创建输出目录
 if not os.path.exists('output'):
@@ -198,9 +239,9 @@ def plot_keywords_bar(word_freq, conf_name, top_n=20):
         plt.figure(figsize=(12, 8))
         plt.barh(range(len(words)), counts, align='center')
         plt.yticks(range(len(words)), words)
-        plt.xlabel('频率')
-        plt.ylabel('关键词')
-        plt.title(f'{conf_name}论文标题高频关键词 (Top {top_n})')
+        plt.xlabel('频率', fontsize=12)
+        plt.ylabel('关键词', fontsize=12)
+        plt.title(f'{conf_name}论文标题高频关键词 (Top {top_n})', fontsize=14)
         plt.tight_layout()
         plt.savefig(f'output/{conf_name.lower()}_keywords_bar.png', dpi=300)
         print(f"已保存关键词频率图到 output/{conf_name.lower()}_keywords_bar.png")
